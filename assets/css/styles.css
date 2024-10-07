@@ -11,6 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --font-heading: Sen, sans-serif;
+}
+
 /* Common */
 .content {
   width: 1170px;
@@ -101,3 +105,118 @@ a {
 }
 
 /* ===== Hero ===== */
+.hero {
+  padding-top: 58px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+/* Hero left */
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover; /* Giúp ảnh ko bị méo vỡ*/
+}
+
+/* ===== Hero summary =====*/
+.hero .hero-summary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  width: 270px;
+  padding: 28px 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-summary .item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.hero .hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff9e8;
+}
+
+.hero .hero-summary .item:nth-of-type(2) .icon {
+  background: #fcefff;
+}
+
+.hero .hero-summary .item:nth-of-type(3) .icon {
+  background: #ebeaff;
+}
+
+.hero .hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero .hero-summary .info .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.hero .hero-summary .info .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.hero .hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+/* ===== Hero right =====*/
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+
+.hero .content-block .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+
+.hero .content-block .desc:first-of-type {
+  margin: 22px 0;
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.hero .cta-group {
+  margin: 38px 0 48px;
+}
+
+.hero .content-block .hero-cta {
+  display: inline-block;
+  min-width: 180px;
+  line-height: 64px;
+  border-radius: 32px;
+  background: #ffb900;
+}
