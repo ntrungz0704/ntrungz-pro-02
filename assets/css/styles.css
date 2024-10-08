@@ -15,6 +15,10 @@ body {
   --font-heading: Sen, sans-serif;
 }
 
+.header .body .logo {
+  z-index: -1;
+}
+
 /* Common */
 .content {
   width: 1170px;
@@ -107,6 +111,7 @@ a {
 /* ===== Hero ===== */
 .hero {
   padding-top: 58px;
+  padding-bottom: 65px;
   background-color: #fffcf4;
 }
 
@@ -199,8 +204,8 @@ a {
   letter-spacing: -0.02em;
 }
 
-.hero .content-block .desc:first-of-type {
-  margin: 22px 0;
+.hero .content-block .desc {
+  margin: 22px 0 0;
   color: #5f5b53;
   font-family: Poppins;
   font-size: 18px;
@@ -219,4 +224,66 @@ a {
   line-height: 64px;
   border-radius: 32px;
   background: #ffb900;
+}
+
+.hero .content-block span {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+
+.hero .content-block .stats {
+  display: flex;
+}
+
+.hero .content-block .stats .desc + .desc {
+  margin-left: 28px;
+}
+
+.hero .content-block .stats strong {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.22; /* 122.727% */
+}
+
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+}
+
+.hero .content-block .watch-video {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.hero .content-block .watch-video span {
+  margin-left: 14px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+
+.hero .content-block .bg-icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.hero .content-block .icon {
+  position: absolute;
+  display: flex;
+  padding: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffb900;
+  width: 20px;
+  height: 20px;
 }
