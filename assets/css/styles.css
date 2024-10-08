@@ -15,10 +15,6 @@ body {
   --font-heading: Sen, sans-serif;
 }
 
-.header .body .logo {
-  z-index: -1;
-}
-
 /* Common */
 .content {
   width: 1170px;
@@ -26,6 +22,7 @@ body {
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+  z-index: -3;
 }
 
 a {
@@ -57,7 +54,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -30px;
-
+  z-index: 1000;
   background: #fffcf4;
 }
 
@@ -286,4 +283,8 @@ a {
   color: #ffb900;
   width: 20px;
   height: 20px;
+}
+
+.hero .content-block .stats .right {
+  margin-top: 8px;
 }
