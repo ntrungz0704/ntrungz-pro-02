@@ -237,6 +237,7 @@ a {
 
 .hero .content-block .stats {
   display: flex;
+  margin-top: 8px;
 }
 
 .hero .content-block .stats .desc + .desc {
