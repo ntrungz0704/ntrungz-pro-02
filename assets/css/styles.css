@@ -47,7 +47,8 @@ a {
   opacity: 0.9;
 }
 
-button {
+button,
+.btn {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -771,4 +772,8 @@ button {
 .blog .body .info .btn {
   position: absolute;
   bottom: 0;
+}
+
+.blog .body .info .btn:hover {
+  background: #ffb900;
 }
