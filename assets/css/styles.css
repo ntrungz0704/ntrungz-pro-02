@@ -400,7 +400,7 @@ button {
   height: 466px;
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .popular .popular-bottom .content-block {
@@ -559,4 +559,216 @@ button {
   font-weight: 400;
   line-height: 40px; /* 153.846% */
   margin-left: 30px;
+}
+
+/* Features */
+.features {
+  margin-top: 200px;
+}
+
+.features .body-top {
+  display: flex;
+  justify-content: space-between;
+  height: 438px;
+}
+
+.features .body-top .img {
+  display: flex;
+  width: calc(100% - 40.17%);
+}
+
+.features .body-top .img img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .body-top .img img:first-child {
+  margin-right: 30px;
+  margin-top: 33px;
+}
+
+/* Info */
+.features .body-top .info {
+  width: 40.17%;
+}
+
+.features .body-top .info .heading {
+  color: #171100;
+  margin-top: 58px;
+  margin-bottom: 16px;
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.features .body-top .info .desc {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.features .body-top .info .desc {
+  display: -webkit-box; /* Đặt khung hiển thị cho dòng */
+  -webkit-line-clamp: 3; /* Hiển thị tối đa 3 dòng */
+  -webkit-box-orient: vertical; /* Định hướng các dòng theo chiều dọc */
+  overflow: hidden; /* Ẩn phần vượt quá khung */
+  text-overflow: ellipsis;
+}
+
+.features .body-top .info p.desc {
+  margin-bottom: 16px;
+}
+
+.features .body-top .info span.desc {
+  margin-bottom: 32px;
+}
+
+.features .body-top .info .btn {
+  width: 137px;
+  background: #ffb900;
+}
+
+/* ===== Body bottom ===== */
+.features .body-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  height: 440px;
+}
+
+.features .body-bottom .info {
+  width: 48.71%;
+  margin: 71px 130px 71px 0px;
+}
+
+.features .body-bottom .info .heading {
+  color: #171100;
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.features .body-bottom .info .desc {
+  color: #5f5b53;
+  margin: 16px 0 32px 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.features .body-bottom .info .btn {
+  width: 137px;
+  background: #ffb900;
+}
+
+.features .body-bottom .img {
+  width: 51.28;
+}
+
+.features .body-bottom .img img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Our blog */
+.blog {
+  margin-top: 200px;
+  padding: 96px 0;
+  background: #fffcf4;
+  height: 878px;
+}
+
+.blog .block {
+  width: 370px;
+  height: 467px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog .body .info-top {
+  margin-bottom: 55px;
+}
+
+.blog .body .info-top .heading {
+  color: #130606;
+  text-align: center;
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.blog .body .info-top .desc {
+  width: 448px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #696262;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+/* blog bottom */
+.blog .body .info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog .body .info-bottom img {
+  width: 370px;
+  height: 250px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.blog .body .info {
+  position: relative;
+  height: 169px;
+  margin: 20px 20px 28px 20px;
+}
+
+.blog .body .info .desc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  padding-left: 12px;
+}
+
+/* Before */
+.blog .body .info-bottom .info .desc::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #ffb900;
+  border-radius: 50%;
+  left: 0;
+}
+
+.blog .body .info .heading {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.blog .body .info .btn {
+  position: absolute;
+  bottom: 0;
 }
