@@ -53,6 +53,14 @@ button {
   cursor: pointer;
 }
 
+.desc {
+  display: -webkit-box; /* Đặt khung hiển thị cho dòng */
+  -webkit-line-clamp: 2; /* Hiển thị tối đa 3 dòng */
+  -webkit-box-orient: vertical; /* Định hướng các dòng theo chiều dọc */
+  overflow: hidden; /* Ẩn phần vượt quá khung */
+  text-overflow: ellipsis;
+}
+
 /* ===== END Common ===== */
 
 /* Header */
@@ -467,3 +475,88 @@ button {
 }
 
 /* end  */
+
+/* ===== Comment user =====*/
+.feedback {
+  margin-top: 200px;
+  height: 380px;
+  background: #2e2100;
+}
+
+.feedback .content {
+  padding: 96px 0;
+}
+
+.feedback .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback .info {
+  width: calc(100% - 65.81%);
+}
+
+.feedback .info img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.feedback .info .heading {
+  margin-top: 18px;
+  margin-bottom: 4px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.41;
+}
+
+.feedback .info .desc {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.feedback .info .dots {
+  display: flex;
+  margin-top: 28px;
+  width: 30px;
+}
+
+.feedback .info .dots .dot {
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+
+.feedback .info .dots .dot + .dot {
+  margin-left: 4px;
+}
+
+.feedback .info .dots .dot.active {
+  background: #ffb900;
+}
+
+.feedback .info .dots .dot:hover {
+  background: #ffb900;
+}
+
+/* Feedback right */
+
+.feedback .comment {
+  width: 65.81%;
+}
+
+.feedback .comment blockquote {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px; /* 153.846% */
+  margin-left: 30px;
+}
