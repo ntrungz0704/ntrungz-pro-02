@@ -47,10 +47,13 @@ a {
   opacity: 0.9;
 }
 
-button,
-.btn {
+button {
   background: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.btn {
   cursor: pointer;
 }
 
@@ -776,4 +779,5 @@ button,
 
 .blog .body .info .btn:hover {
   background: #ffb900;
+  cursor: pointer;
 }
