@@ -24,6 +24,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: -3;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -56,6 +58,13 @@ button {
 
 .btn {
   cursor: pointer;
+}
+
+.line-clamp {
+  display: -webkit-box; /* Đặt khung hiển thị cho dòng */
+  -webkit-line-clamp: 2; /* Hiển thị tối đa 3 dòng */
+  -webkit-box-orient: vertical; /* Định hướng các dòng theo chiều dọc */
+  overflow: hidden; /* Ẩn phần vượt quá khung */
 }
 
 .desc {
@@ -671,6 +680,7 @@ button {
 }
 
 .features .body-bottom .info .btn {
+  height: 50px;
   width: 137px;
   background: #ffb900;
 }
@@ -776,6 +786,10 @@ button {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.75;
+  display: -webkit-box; /* Đặt khung hiển thị cho dòng */
+  -webkit-line-clamp: 2; /* Hiển thị tối đa 3 dòng */
+  -webkit-box-orient: vertical; /* Định hướng các dòng theo chiều dọc */
+  overflow: hidden; /* Ẩn phần vượt quá khung */
 }
 
 .blog .body .info .heading::before {
@@ -893,7 +907,7 @@ button {
   line-height: 1.75;
 }
 
-.footer .body .info .block .list li a{
+.footer .body .info .block .list li a {
   color: #bfbcb2;
   font-size: 1.4rem;
   font-weight: 400;
@@ -945,13 +959,18 @@ button {
   bottom: -14px;
   width: 130px;
   height: 1px;
-  background: #59554B;
+  background: #59554b;
 }
-
 
 .footer .underline {
   display: block;
   height: 1px;
   margin-top: 38px;
-  background: #59554B;
+  background: #59554b;
+}
+
+
+
+.footer .info .block a:hover{
+  text-decoration: underline;
 }
